@@ -66,7 +66,7 @@ public class SearchInsertPosition {
                     divideAndSearch(nums, startIdx, endIdx, target);
                 }
                 if ((endIdx - startIdx) <= 1) {
-                    if(target == nums[startIdx]){
+                    if (target == nums[startIdx]) {
                         return startIdx;
                     }
                     return startIdx + 1;

@@ -11,16 +11,16 @@ public class ClimbingStairs {
     }
 
     static public int climbStairs(int n) {
-        if (n <= 2 && n >= 0){
+        if (n <= 2 && n >= 0) {
             return n;
         }
         int beforePrev = 1;
         int prev = 2;
         int counter = 0;
-        if (n>2){
+        if (n > 2) {
             for (int i = 3; i <= n; i++) {
                 counter = beforePrev + prev;
-                beforePrev= prev;
+                beforePrev = prev;
                 prev = counter;
             }
         }

@@ -27,7 +27,6 @@ public class SearchInsertPosition {
         System.out.println(searchInsert(ints4, target));
         System.out.println(searchInsert(ints5, target));
         System.out.println(searchInsert(ints6, target));
-
         System.out.println(searchInsert(ints7, target2));
         System.out.println(searchInsert(ints8, target2));
         System.out.println(searchInsert(ints9, target2));

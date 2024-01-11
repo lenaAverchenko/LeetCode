@@ -6,14 +6,12 @@ public class LongestCommonPrefix {
         String[] strs1 = {"dog", "racecar", "car"};
         String[] strs2 = {"af", "a"};
         String[] strs3 = {"afta", "aft", "af"};
-        String[] strs4 = {"c","acc","ccc"};
+        String[] strs4 = {"c", "acc", "ccc"};
         System.out.println(longestCommonPrefix(strs));
         System.out.println(longestCommonPrefix(strs1));
         System.out.println(longestCommonPrefix(strs2));
         System.out.println(longestCommonPrefix(strs3));
         System.out.println(longestCommonPrefix(strs4));
-
-
     }
 
     static public String longestCommonPrefix(String[] strs) {
@@ -39,6 +37,5 @@ public class LongestCommonPrefix {
         }
         return pattern;
     }
-
 }
 

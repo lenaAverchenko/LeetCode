@@ -13,8 +13,8 @@ public class SortedArray {
 
     static public int removeDuplicates(int[] nums) {
         int markerIndex = 1;
-        for (int n:nums) {
-            if (n!= nums[markerIndex-1]) {
+        for (int n : nums) {
+            if (n != nums[markerIndex - 1]) {
                 nums[markerIndex] = n;
                 markerIndex++;
             }

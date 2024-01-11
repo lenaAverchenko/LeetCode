@@ -38,7 +38,7 @@ public class ValidParentheses {
                     parStack.push('[');
                     break;
                 case '}':
-                    if (parStack.isEmpty()){
+                    if (parStack.isEmpty()) {
                         return false;
                     }
                     if (parStack.peek() == '{') {
@@ -48,7 +48,7 @@ public class ValidParentheses {
                     }
                     break;
                 case ']':
-                    if (parStack.isEmpty()){
+                    if (parStack.isEmpty()) {
                         return false;
                     }
                     if (parStack.peek() == '[') {
@@ -58,7 +58,7 @@ public class ValidParentheses {
                     }
                     break;
                 case ')':
-                    if (parStack.isEmpty()){
+                    if (parStack.isEmpty()) {
                         return false;
                     }
                     if (parStack.peek() == '(') {
@@ -71,10 +71,10 @@ public class ValidParentheses {
                     return false;
             }
         }
-            if (parStack.isEmpty()) {
-                return true;
-            }
-            return false;
+        if (parStack.isEmpty()) {
+            return true;
+        }
+        return false;
     }
 }
 

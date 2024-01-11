@@ -12,7 +12,6 @@ public class LastWordLength {
         System.out.println(lengthOfLastWord(str3));
         System.out.println(lengthOfLastWord(str4));
         System.out.println(lengthOfLastWord(str5));
-
         System.out.println(lengthOfLastWordAnother(str1));
         System.out.println(lengthOfLastWordAnother(str2));
         System.out.println(lengthOfLastWordAnother(str3));
@@ -21,19 +20,19 @@ public class LastWordLength {
     }
 
     static public int lengthOfLastWord(String s) {
-        if (s.isBlank()){
+        if (s.isBlank()) {
             return 0;
         }
         String[] words = s.split(" ");
-        return words[words.length-1].length();
+        return words[words.length - 1].length();
     }
 
     static public int lengthOfLastWordAnother(String s) {
-        if (!s.isBlank()){
+        if (!s.isBlank()) {
             char[] symbols = s.toCharArray();
             int counter = 0;
-            for (int i = symbols.length-1; i >= 0; i--) {
-                if (symbols[i] == ' '){
+            for (int i = symbols.length - 1; i >= 0; i--) {
+                if (symbols[i] == ' ') {
                     if (counter != 0) {
                         return counter;
                     }
@@ -47,9 +46,9 @@ public class LastWordLength {
     }
 
     static public int lengthOfLastWordAnotherOne(String s) {
-        if (s.isBlank()){
+        if (s.isBlank()) {
             return 0;
         }
-        return (s.split(" "))[(s.split(" ")).length-1].length();
+        return (s.split(" "))[(s.split(" ")).length - 1].length();
     }
 }

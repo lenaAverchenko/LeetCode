@@ -20,7 +20,6 @@ public class FirstOccurrence {
         System.out.println(strStr(str4, needle1));
         System.out.println(strStr(str5, needle2));
         System.out.println(strStr(str6, needle3));
-
         System.out.println(strStrAnother(str1, needle));
         System.out.println(strStrAnother(str2, needle));
         System.out.println(strStrAnother(str3, needle));
@@ -35,13 +34,13 @@ public class FirstOccurrence {
         int result = 0;
         for (int i = 0; i < haystack.length(); i++) {
             if (haystackLetters[i] == needleLetters[0]) {
-                if (needleLetters.length > (haystack.length() - i)){
+                if (needleLetters.length > (haystack.length() - i)) {
                     return -1;
                 }
                 for (int j = 0; j < needleLetters.length; j++) {
                     if (needleLetters[j] == haystackLetters[i + j]) {
                         result++;
-                 } else {
+                    } else {
                         result = 0;
                     }
                     if (result == needleLetters.length) {
@@ -55,7 +54,7 @@ public class FirstOccurrence {
     }
 
     static public int strStrAnother(String haystack, String needle) {
-        if (haystack.contains(needle)){
+        if (haystack.contains(needle)) {
             return haystack.indexOf(needle);
         }
         return -1;

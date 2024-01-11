@@ -8,7 +8,6 @@ public class AddBinary {
         System.out.println(addBinary(str, str2));
         System.out.println(addBinary("1", "11"));
         System.out.println(addBinary("100000101010", "1101010000000000010"));
-
     }
 
     static public String addBinary(String a, String b) {
@@ -70,7 +69,7 @@ public class AddBinary {
                 j--;
             }
         }
-        if (sum != 0){
+        if (sum != 0) {
             builder.append(1);
         }
         return builder.reverse().toString();
@@ -95,6 +94,4 @@ public class AddBinary {
         }
         return number;
     }
-
-
 }

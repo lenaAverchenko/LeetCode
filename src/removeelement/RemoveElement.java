@@ -4,7 +4,7 @@ public class RemoveElement {
     public static void main(String[] args) {
         int[] arrayOfNums = {1, 5, 7, 8, 9, 1, 5, 4, 6, 7, 8, 2};
         int val = 5;
-        int[] arrayOfNums1 = {3,2,2,3};
+        int[] arrayOfNums1 = {3, 2, 2, 3};
         int val1 = 3;
         System.out.println(removeElement(arrayOfNums, val));
         System.out.println(removeElement(arrayOfNums1, val1));
@@ -13,9 +13,9 @@ public class RemoveElement {
     static public int removeElement(int[] nums, int val) {
         int resultedNumber = 0;
         for (int n : nums) {
-            if (n != val){
+            if (n != val) {
                 nums[resultedNumber] = n;
-                resultedNumber ++;
+                resultedNumber++;
             }
         }
         return resultedNumber;

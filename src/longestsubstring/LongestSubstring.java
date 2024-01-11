@@ -19,7 +19,7 @@ public class LongestSubstring {
         int indexIndicator = 0;
         List<Character> subCharacters = new ArrayList<>();
         char[] chars = s.toCharArray();
-        if (chars.length == 1){
+        if (chars.length == 1) {
             return 1;
         }
         while (pointerIndex < chars.length - 1) {
@@ -29,7 +29,7 @@ public class LongestSubstring {
                     if (subCharacters.size() > length) {
                         length = subCharacters.size();
                     }
-                    if (subCharacters.size()==1){
+                    if (subCharacters.size() == 1) {
                         pointerIndex = i;
                         break;
                     }
